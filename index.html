@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriZone — Premium Supplement Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">NUTRI<span>ZONE</span></a>
+      <ul class="nav-links">
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#location" class="nav-store-link">📍 Find Store</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#brands" onclick="closeMobile()">Brands</a></li>
+      <li><a href="#products" onclick="closeMobile()">Products</a></li>
+      <li><a href="#categories" onclick="closeMobile()">Categories</a></li>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#location" onclick="closeMobile()">Find Store</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-img" style="background-image:url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=1600&auto=format&q=80')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow reveal-up">India's #1 Supplement Destination</span>
+      <h1 class="hero-title reveal-up delay-1">
+        FUEL YOUR<br><span class="accent-text">BEST SELF.</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">
+        100% authentic supplements from the brands you trust —
+        Avvatar, MuscleBlaze, BigMuscles, Wellcore &amp; more.
+      </p>
+      <div class="hero-btns reveal-up delay-3">
+        <a href="#products" class="btn-primary">Explore Products</a>
+        <a href="#brands" class="btn-outline">Our Brands</a>
+      </div>
+    </div>
+    <div class="hero-stats reveal-up delay-4">
+      <div class="hero-stat"><strong>50+</strong><span>Brands</span></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><strong>500+</strong><span>Products</span></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><strong>100%</strong><span>Authentic</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>Whey Protein</span><span class="mx">✦</span>
+      <span>Creatine Monohydrate</span><span class="mx">✦</span>
+      <span>Pre-Workout</span><span class="mx">✦</span>
+      <span>Mass Gainer</span><span class="mx">✦</span>
+      <span>Multivitamin</span><span class="mx">✦</span>
+      <span>BCAA</span><span class="mx">✦</span>
+      <span>Fat Burner</span><span class="mx">✦</span>
+      <span>Omega-3</span><span class="mx">✦</span>
+      <span>Glutamine</span><span class="mx">✦</span>
+      <span>Whey Protein</span><span class="mx">✦</span>
+      <span>Creatine Monohydrate</span><span class="mx">✦</span>
+      <span>Pre-Workout</span><span class="mx">✦</span>
+      <span>Mass Gainer</span><span class="mx">✦</span>
+      <span>Multivitamin</span><span class="mx">✦</span>
+      <span>BCAA</span><span class="mx">✦</span>
+      <span>Fat Burner</span><span class="mx">✦</span>
+      <span>Omega-3</span><span class="mx">✦</span>
+      <span>Glutamine</span><span class="mx">✦</span>
+    </div>
+  </div>
+
+  <!-- ===================== BRANDS ===================== -->
+  <section class="brands-section" id="brands">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="section-tag">Our Collection</span>
+        <h2 class="section-title">TOP BRANDS</h2>
+        <p class="section-sub">Premium sports nutrition from brands trusted by athletes across India</p>
+      </div>
+      <div class="brands-grid">
+
+        <!-- MUSCLEBLAZE -->
+        <div class="brand-card reveal-up" data-brand="muscleblaze">
+          <div class="brand-logo-wrap" style="background:#E8F4FF;">
+            <div class="brand-logo mb-logo">MuscleBlaze<sup>®</sup></div>
+          </div>
+          <div class="brand-info">
+            <p>India's #1 sports nutrition brand. Clinically tested. Lab certified. Built for Indian bodies.</p>
+            <div class="brand-tags">
+              <span>Whey Protein</span>
+              <span>Mass Gainer</span>
+              <span>Pre-Workout</span>
+              <span>BCAA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AVVATAR -->
+        <div class="brand-card reveal-up delay-1" data-brand="avvatar">
+          <div class="brand-logo-wrap" style="background:#FFF3E8;">
+            <div class="brand-logo av-logo">avvatar<sup>™</sup></div>
+          </div>
+          <div class="brand-info">
+            <p>Premium Indian whey with 27g protein per serving. Highest protein-to-serving ratio in the market.</p>
+            <div class="brand-tags">
+              <span>Whey Protein</span>
+              <span>Absolute Whey</span>
+              <span>Isolate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BIGMUSCLES -->
+        <div class="brand-card reveal-up delay-2" data-brand="bigmuscles">
+          <div class="brand-logo-wrap" style="background:#FFF0F0;">
+            <div class="brand-logo bm-logo">Big<span>Muscles</span></div>
+          </div>
+          <div class="brand-info">
+            <p>Performance-driven nutrition with GMP certified manufacturing and premium ingredient sourcing.</p>
+            <div class="brand-tags">
+              <span>Xtreme Whey</span>
+              <span>Premium Gold</span>
+              <span>Real Mass</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WELLCORE -->
+        <div class="brand-card reveal-up delay-3" data-brand="wellcore">
+          <div class="brand-logo-wrap" style="background:#F0FFF4;">
+            <div class="brand-logo wc-logo">wellcore<sup>®</sup></div>
+          </div>
+          <div class="brand-info">
+            <p>Science-first supplement brand. Micronized creatine with rapid absorption technology.</p>
+            <div class="brand-tags">
+              <span>Creatine</span>
+              <span>Pre-Workout</span>
+              <span>Vitamins</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- NUTRABAY -->
+        <div class="brand-card reveal-up delay-4" data-brand="nutrabay">
+          <div class="brand-logo-wrap" style="background:#F5F0FF;">
+            <div class="brand-logo nb-logo">nutrabay<sup>™</sup></div>
+          </div>
+          <div class="brand-info">
+            <p>Clean label supplements with transparent nutritional profiling. Gold series for elite performance.</p>
+            <div class="brand-tags">
+              <span>Gold Whey</span>
+              <span>Creatine</span>
+              <span>Multi-Vitamin</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ON (Optimum Nutrition) -->
+        <div class="brand-card reveal-up delay-5" data-brand="on">
+          <div class="brand-logo-wrap" style="background:#FFF8E8;">
+            <div class="brand-logo on-logo">Optimum<br>Nutrition</div>
+          </div>
+          <div class="brand-info">
+            <p>World's best-selling whey protein. Gold Standard — the global benchmark in sports nutrition.</p>
+            <div class="brand-tags">
+              <span>Gold Standard</span>
+              <span>Creatine</span>
+              <span>Amino Energy</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="section-tag">Explore</span>
+        <h2 class="section-title">ALL PRODUCTS</h2>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters-row reveal-up">
+        <div class="filter-group">
+          <span class="filter-label">CATEGORY</span>
+          <div class="filter-tabs" id="catTabs">
+            <button class="ftab active" data-cat="all">All</button>
+            <button class="ftab" data-cat="protein">Protein</button>
+            <button class="ftab" data-cat="creatine">Creatine</button>
+            <button class="ftab" data-cat="preworkout">Pre-Workout</button>
+            <button class="ftab" data-cat="mass">Mass Gainer</button>
+            <button class="ftab" data-cat="vitamins">Vitamins</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">BRAND</span>
+          <div class="filter-tabs" id="brandTabs">
+            <button class="ftab active" data-brand="all">All</button>
+            <button class="ftab" data-brand="muscleblaze">MuscleBlaze</button>
+            <button class="ftab" data-brand="avvatar">Avvatar</button>
+            <button class="ftab" data-brand="bigmuscles">BigMuscles</button>
+            <button class="ftab" data-brand="wellcore">Wellcore</button>
+            <button class="ftab" data-brand="nutrabay">Nutrabay</button>
+            <button class="ftab" data-brand="on">ON</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <!-- ======== MUSCLEBLAZE PRODUCTS ======== -->
+
+        <div class="pcard" data-cat="protein" data-brand="muscleblaze">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=400&auto=format&q=80" alt="MuscleBlaze Biozyme Whey" loading="lazy" />
+            <div class="pcard-brand-badge mb-badge">MuscleBlaze</div>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Whey Protein</span>
+            <h3 class="pcard-name">Biozyme Performance Whey</h3>
+            <p class="pcard-desc">25g protein | Clinically tested 50% higher absorption | Chocolate Fudge</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">1 kg</span>
+                <span class="weight-chip">2 kg</span>
+                <span class="weight-chip">4 kg</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★★</span> <span>4.8 (2.1k)</span></div>
+              <span class="pcard-price">₹2,699</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard" data-cat="mass" data-brand="muscleblaze">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1585982427935-2ede3a73d22e?w=400&auto=format&q=80" alt="MB Mass Gainer" loading="lazy" />
+            <div class="pcard-brand-badge mb-badge">MuscleBlaze</div>
+            <span class="pcard-sale-badge">SALE</span>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Mass Gainer</span>
+            <h3 class="pcard-name">Mass Gainer XXL</h3>
+            <p class="pcard-desc">61g protein | 1250 cal per serving | Complex carbs + digestive enzymes</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">3 kg</span>
+                <span class="weight-chip">5 kg</span>
+                <span class="weight-chip">11 kg</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★☆</span> <span>4.5 (1.4k)</span></div>
+              <span class="pcard-price">₹1,899 <del>₹2,499</del></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard" data-cat="preworkout" data-brand="muscleblaze">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&auto=format&q=80" alt="MB Pre Workout" loading="lazy" />
+            <div class="pcard-brand-badge mb-badge">MuscleBlaze</div>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Pre-Workout</span>
+            <h3 class="pcard-name">WrathX Pre-Workout</h3>
+            <p class="pcard-desc">200mg caffeine | Beta-Alanine | Citrulline Malate | 30 servings</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">340g</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★★</span> <span>4.7 (876)</span></div>
+              <span class="pcard-price">₹1,599</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard" data-cat="protein" data-brand="muscleblaze">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&auto=format&q=80" alt="MB Raw Whey" loading="lazy" />
+            <div class="pcard-brand-badge mb-badge">MuscleBlaze</div>
+            <span class="pcard-new-badge">NEW</span>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Raw Whey</span>
+            <h3 class="pcard-name">Raw Whey Protein 80%</h3>
+            <p class="pcard-desc">24g protein | Unflavoured | 100% concentrate | Budget pick</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">1 kg</span>
+                <span class="weight-chip">2 kg</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★☆</span> <span>4.4 (3.2k)</span></div>
+              <span class="pcard-price">₹1,299</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======== AVVATAR PRODUCTS ======== -->
+
+        <div class="pcard featured" data-cat="protein" data-brand="avvatar">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1622484212850-b6cb8abc6d21?w=400&auto=format&q=80" alt="Avvatar Whey Protein" loading="lazy" />
+            <div class="pcard-brand-badge av-badge">Avvatar</div>
+            <span class="pcard-new-badge">TOP RATED</span>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Whey Protein</span>
+            <h3 class="pcard-name">Absolute Whey Protein</h3>
+            <p class="pcard-desc">27g protein per 35g serving | Malai Kulfi / Belgian Chocolate | Isolate + Concentrate</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">1 kg</span>
+                <span class="weight-chip">2.5 kg</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★★</span> <span>4.9 (4.7k)</span></div>
+              <span class="pcard-price">₹3,199</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard" data-cat="protein" data-brand="avvatar">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=400&auto=format&q=80" alt="Avvatar Isolate" loading="lazy" />
+            <div class="pcard-brand-badge av-badge">Avvatar</div>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Whey Isolate</span>
+            <h3 class="pcard-name">Avvatar Absolute Isolate</h3>
+            <p class="pcard-desc">28g protein | 0g sugar | Ultra-filtered isolate | Fast digestion</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">1 kg</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★★</span> <span>4.8 (1.8k)</span></div>
+              <span class="pcard-price">₹3,699</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======== BIGMUSCLES PRODUCTS ======== -->
+
+        <div class="pcard" data-cat="protein" data-brand="bigmuscles">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&auto=format&q=80" alt="BigMuscles Xtreme Whey" loading="lazy" />
+            <div class="pcard-brand-badge bm-badge">BigMuscles</div>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Whey Protein</span>
+            <h3 class="pcard-name">Xtreme Whey Gold</h3>
+            <p class="pcard-desc">25g protein | With digestive enzymes | Belgian Chocolate / Mango</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">2 kg</span>
+                <span class="weight-chip">4 kg</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★☆</span> <span>4.5 (987)</span></div>
+              <span class="pcard-price">₹2,499</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard" data-cat="mass" data-brand="bigmuscles">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=400&auto=format&q=80" alt="BigMuscles Real Mass" loading="lazy" />
+            <div class="pcard-brand-badge bm-badge">BigMuscles</div>
+            <span class="pcard-sale-badge">SALE</span>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Mass Gainer</span>
+            <h3 class="pcard-name">Premium Gold Whey</h3>
+            <p class="pcard-desc">26g protein | Isolate-enriched | Added vitamins | Rich Chocolate</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">1 kg</span>
+                <span class="weight-chip">2 kg</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★☆</span> <span>4.3 (654)</span></div>
+              <span class="pcard-price">₹2,099 <del>₹2,799</del></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======== WELLCORE PRODUCTS ======== -->
+
+        <div class="pcard featured" data-cat="creatine" data-brand="wellcore">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=400&auto=format&q=80" alt="Wellcore Creatine" loading="lazy" />
+            <div class="pcard-brand-badge wc-badge">Wellcore</div>
+            <span class="pcard-new-badge">TRENDING</span>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Creatine</span>
+            <h3 class="pcard-name">Pure Micronised Creatine</h3>
+            <p class="pcard-desc">100% creatine monohydrate | Rapid absorption | Unflavoured & Fruit Fusion</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">122g</span>
+                <span class="weight-chip">307g</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★★</span> <span>4.8 (2.3k)</span></div>
+              <span class="pcard-price">₹699</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard" data-cat="preworkout" data-brand="wellcore">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=400&auto=format&q=80" alt="Wellcore Pre Workout" loading="lazy" />
+            <div class="pcard-brand-badge wc-badge">Wellcore</div>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Pre-Workout</span>
+            <h3 class="pcard-name">Wellcore Pre-Workout</h3>
+            <p class="pcard-desc">250mg caffeine | L-citrulline | Beta-alanine | 30 explosive servings</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">300g</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★☆</span> <span>4.5 (743)</span></div>
+              <span class="pcard-price">₹1,399</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard" data-cat="vitamins" data-brand="wellcore">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&auto=format&q=80" alt="Wellcore Multivitamin" loading="lazy" />
+            <div class="pcard-brand-badge wc-badge">Wellcore</div>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Multivitamin</span>
+            <h3 class="pcard-name">Daily Essential Multivitamin</h3>
+            <p class="pcard-desc">30+ nutrients | Immunity + Energy | For active athletes | 60 tablets</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">60 tabs</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★☆</span> <span>4.4 (512)</span></div>
+              <span class="pcard-price">₹599</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======== NUTRABAY PRODUCTS ======== -->
+
+        <div class="pcard" data-cat="protein" data-brand="nutrabay">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?w=400&auto=format&q=80" alt="Nutrabay Gold Whey" loading="lazy" />
+            <div class="pcard-brand-badge nb-badge">Nutrabay</div>
+            <span class="pcard-new-badge">NEW</span>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Whey Isolate</span>
+            <h3 class="pcard-name">Gold 100% Whey Protein Isolate</h3>
+            <p class="pcard-desc">27g protein | Less than 1g fat | Cold-processed isolate | Vanilla Ice Cream</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">1 kg</span>
+                <span class="weight-chip">2 kg</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★★</span> <span>4.7 (1.1k)</span></div>
+              <span class="pcard-price">₹2,999</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard" data-cat="creatine" data-brand="nutrabay">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1543340904-0d1df07fe318?w=400&auto=format&q=80" alt="Nutrabay Creatine" loading="lazy" />
+            <div class="pcard-brand-badge nb-badge">Nutrabay</div>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Creatine</span>
+            <h3 class="pcard-name">Gold Creatine Monohydrate</h3>
+            <p class="pcard-desc">Pure micronised creatine | 100 servings | Unflavoured | 3g per scoop</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">300g</span>
+                <span class="weight-chip">500g</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★★</span> <span>4.8 (876)</span></div>
+              <span class="pcard-price">₹799</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard" data-cat="vitamins" data-brand="nutrabay">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=400&auto=format&q=80" alt="Nutrabay Omega 3" loading="lazy" />
+            <div class="pcard-brand-badge nb-badge">Nutrabay</div>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Omega-3</span>
+            <h3 class="pcard-name">Gold Omega-3 Fish Oil</h3>
+            <p class="pcard-desc">1000mg per softgel | EPA 180mg + DHA 120mg | 60 softgels</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">60 caps</span>
+                <span class="weight-chip">120 caps</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★☆</span> <span>4.5 (654)</span></div>
+              <span class="pcard-price">₹499</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======== ON PRODUCTS ======== -->
+
+        <div class="pcard featured" data-cat="protein" data-brand="on">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&auto=format&q=80" alt="ON Gold Standard" loading="lazy" />
+            <div class="pcard-brand-badge on-badge">ON</div>
+            <span class="pcard-new-badge">GLOBAL #1</span>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Whey Protein</span>
+            <h3 class="pcard-name">Gold Standard 100% Whey</h3>
+            <p class="pcard-desc">24g protein | World's best selling whey | Double Rich Chocolate | 5.5g BCAAs</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">908g</span>
+                <span class="weight-chip">2.27 kg</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★★</span> <span>4.9 (12.4k)</span></div>
+              <span class="pcard-price">₹4,999</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard" data-cat="creatine" data-brand="on">
+          <div class="pcard-img">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&auto=format&q=80" alt="ON Creatine" loading="lazy" />
+            <div class="pcard-brand-badge on-badge">ON</div>
+            <button class="pcard-wishlist" aria-label="Wishlist">♡</button>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Creatine</span>
+            <h3 class="pcard-name">Micronised Creatine Powder</h3>
+            <p class="pcard-desc">3g per serving | Unflavoured | 88 servings | Pure creapure® grade</p>
+            <div class="pcard-meta">
+              <div class="pcard-weight-row">
+                <span class="weight-chip active">250g</span>
+                <span class="weight-chip">634g</span>
+              </div>
+            </div>
+            <div class="pcard-footer">
+              <div class="pcard-rating"><span class="stars">★★★★★</span> <span>4.8 (5.6k)</span></div>
+              <span class="pcard-price">₹1,299</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="no-results" id="noResults" style="display:none;">
+        <span>🔍</span>
+        <p>No products found for this filter combination.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORIES OVERVIEW ===================== -->
+  <section class="categories-section" id="categories">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="section-tag">Browse By Type</span>
+        <h2 class="section-title">SUPPLEMENT CATEGORIES</h2>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-item reveal-up" style="background:url('https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=600&auto=format&q=80') center/cover">
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>Whey Protein</h3>
+            <p>Isolate · Concentrate · Raw</p>
+            <span class="cat-count">45+ variants</span>
+          </div>
+        </div>
+        <div class="cat-item reveal-up delay-1" style="background:url('https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=600&auto=format&q=80') center/cover">
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>Pre-Workout</h3>
+            <p>Energy · Pump · Focus</p>
+            <span class="cat-count">22+ variants</span>
+          </div>
+        </div>
+        <div class="cat-item reveal-up delay-2" style="background:url('https://images.unsplash.com/photo-1571019613914-85f342c6a11e?w=600&auto=format&q=80') center/cover">
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>Creatine</h3>
+            <p>Monohydrate · HCL · Micronised</p>
+            <span class="cat-count">18+ variants</span>
+          </div>
+        </div>
+        <div class="cat-item reveal-up delay-3" style="background:url('https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&auto=format&q=80') center/cover">
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>Mass Gainer</h3>
+            <p>Lean Mass · Bulk · XXL</p>
+            <span class="cat-count">15+ variants</span>
+          </div>
+        </div>
+        <div class="cat-item reveal-up delay-4" style="background:url('https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&auto=format&q=80') center/cover">
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>Vitamins &amp; Health</h3>
+            <p>Multivitamin · Omega-3 · Zinc</p>
+            <span class="cat-count">30+ variants</span>
+          </div>
+        </div>
+        <div class="cat-item reveal-up delay-5" style="background:url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&auto=format&q=80') center/cover">
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>BCAA / EAA</h3>
+            <p>Intra-workout · Recovery</p>
+            <span class="cat-count">20+ variants</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT / WHY US ===================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal-up">
+          <span class="section-tag">Why NutriZone</span>
+          <h2 class="section-title">YOUR TRUST IS<br>OUR <span class="accent-text">PRODUCT.</span></h2>
+          <p class="about-desc">
+            We are a dedicated offline &amp; online supplement store based in New Delhi.
+            Every product we stock is sourced directly from authorized distributors with
+            complete authenticity guarantees.
+          </p>
+          <ul class="about-list">
+            <li><span class="check">✓</span> 100% authenticated supplements with QR verification</li>
+            <li><span class="check">✓</span> Expert staff trained in sports nutrition</li>
+            <li><span class="check">✓</span> Free consultation with certified nutritionist</li>
+            <li><span class="check">✓</span> Same-day delivery in Delhi NCR</li>
+            <li><span class="check">✓</span> Easy returns &amp; exchange policy</li>
+          </ul>
+        </div>
+        <div class="about-right reveal-up delay-2">
+          <div class="stats-big-grid">
+            <div class="sbg-item" style="background:#FFF3E8;">
+              <span class="sbg-num">500<sup>+</sup></span>
+              <span class="sbg-label">Products In Stock</span>
+            </div>
+            <div class="sbg-item" style="background:#E8F4FF;">
+              <span class="sbg-num">50<sup>+</sup></span>
+              <span class="sbg-label">Premium Brands</span>
+            </div>
+            <div class="sbg-item" style="background:#F0FFF4;">
+              <span class="sbg-num">10K<sup>+</sup></span>
+              <span class="sbg-label">Happy Customers</span>
+            </div>
+            <div class="sbg-item" style="background:#FFF0F5;">
+              <span class="sbg-num">5<sup>★</sup></span>
+              <span class="sbg-label">Average Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STORE LOCATION ===================== -->
+  <section class="location-section" id="location">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="section-tag">Visit Us</span>
+        <h2 class="section-title">FIND OUR STORE</h2>
+        <p class="section-sub">Walk in for expert advice, instant availability, and genuine products.</p>
+      </div>
+      <div class="location-grid reveal-up">
+        <div class="location-info">
+          <div class="store-detail-card">
+            <div class="store-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>NutriZone Supplement Store<br>
+                 Shop No. 14, G Block Market,<br>
+                 Connaught Place, New Delhi — 110001</p>
+            </div>
+          </div>
+          <div class="store-detail-card">
+            <div class="store-icon">🕐</div>
+            <div>
+              <h4>Store Hours</h4>
+              <p>Monday – Saturday: 9:00 AM – 9:00 PM<br>
+                 Sunday: 10:00 AM – 7:00 PM</p>
+            </div>
+          </div>
+          <div class="store-detail-card">
+            <div class="store-icon">📞</div>
+            <div>
+              <h4>Contact</h4>
+              <p>+91 98765 43210<br>
+                 info@nutrizone.in</p>
+            </div>
+          </div>
+          <div class="store-detail-card">
+            <div class="store-icon">🚇</div>
+            <div>
+              <h4>Nearest Metro</h4>
+              <p>Rajiv Chowk Metro Station<br>
+                 Exit Gate 7 — 3 min walk</p>
+            </div>
+          </div>
+          <button class="btn-primary map-open-btn" id="mapOpenBtn">
+            📍 View on Google Maps
+          </button>
+        </div>
+        <div class="location-map-preview" id="mapPreview">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1574!2d77.2123!3d28.6304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="NutriZone Store Location">
+          </iframe>
+          <div class="map-pin-overlay">
+            <div class="map-pin-label">
+              📍 NutriZone Store
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MAP MODAL ===================== -->
+  <div class="map-modal" id="mapModal">
+    <div class="map-modal-inner">
+      <button class="map-modal-close" id="mapModalClose">✕ Close</button>
+      <h3 class="map-modal-title">📍 NutriZone — Connaught Place, New Delhi</h3>
+      <div class="map-modal-frame">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1574!2d77.2123!3d28.6304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="NutriZone Store Location Full">
+        </iframe>
+      </div>
+      <a href="https://maps.google.com/?q=Connaught+Place+New+Delhi" target="_blank" class="btn-primary map-directions-btn">
+        Get Directions →
+      </a>
+    </div>
+  </div>
+  <div class="map-backdrop" id="mapBackdrop"></div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">NUTRI<span>ZONE</span></div>
+          <p>Your trusted supplement store in Delhi NCR. 100% authentic products from top brands.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#products">All Products</a></li>
+            <li><a href="#brands">Our Brands</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#location">Find Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Brands</h4>
+          <ul>
+            <li><a href="#products">MuscleBlaze</a></li>
+            <li><a href="#products">Avvatar</a></li>
+            <li><a href="#products">BigMuscles</a></li>
+            <li><a href="#products">Wellcore</a></li>
+            <li><a href="#products">Nutrabay</a></li>
+            <li><a href="#products">Optimum Nutrition</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li><a href="mailto:info@nutrizone.in">info@nutrizone.in</a></li>
+            <li><a href="#location">G Block, Connaught Place</a></li>
+            <li><a href="#location">New Delhi — 110001</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 NutriZone. All rights reserved. Product overview only — prices may vary.</span>
+        <span>Made in 🇮🇳 India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
